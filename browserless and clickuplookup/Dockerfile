@@ -18,7 +18,7 @@ RUN set -eux; \
 	rm -rf /root/.npm
 
 # Install the browserless package
-RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-browserless
+RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-browserless && npm install n8n-nodes-clickuplookup
 
 # Set a custom user to not have n8n run as root
 USER root
