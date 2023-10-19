@@ -3,7 +3,7 @@ FROM n8nio/base:${NODE_VERSION}
 
 ARG N8N_VERSION
 
-ENV N8N_VERSION=latest
+ENV N8N_VERSION=1.8.2
 ENV NODE_ENV=production
 RUN set -eux; \
 	apkArch="$(apk --print-arch)"; \
